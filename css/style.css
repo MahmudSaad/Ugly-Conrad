@@ -1,0 +1,591 @@
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: Candara ;
+    
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+
+
+/*---------------------------- Section One : home ---------------------------------*/
+section.conrad{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/slide-1-fs.jpg);
+    background-size: cover;
+    color:white;
+    background-attachment: fixed;
+    
+}
+header{
+    padding-top: 20px;
+    
+}
+.header{
+    display: none;
+    background: black;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 999;
+    padding-left: 40px;
+}
+
+
+section.conrad div.logo{
+    width: 50%;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+section.conrad nav{
+    width: 50%;
+    float: right;
+    
+    
+}
+section.conrad nav ul li{
+    display: inline-block;
+    padding-left: 17px;/*17*/
+    padding-top: 10px;
+}
+section.conrad nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.clear{
+    clear: both;
+}
+
+section.conrad div.digital{
+    margin-top: 25%;
+}
+
+section.conrad div.digital p:first-child{
+    font-size: 3em;
+    font-weight: bold;
+}
+section.conrad div.digital p span{
+    transition: all .5s ease-in-out;
+}
+section.conrad div.digital p:last-child:hover span{
+    transform: rotate(360deg);
+    display: inline-block;
+    
+}
+
+/*---------------Section Two : About-------------------------*/
+
+section.about{
+    width: 100%;
+    height: 500px;
+    padding: 70px 0 70px 0;
+}
+
+
+section.about div.creative ,
+section.about div.awsome ,
+section.about div.office {
+width: 30%;
+float: left;
+margin-left: 3%;
+}
+section.about div.creative {
+    margin-left: 0;
+}
+
+
+section.about div.creative h2{
+    font-size: 30px;
+    padding-bottom: 25px;
+    color:#444;
+}
+
+section.about div.creative p{
+    padding-bottom: 25px;
+    line-height: 1.5;
+    color: #444;
+}
+
+section.about div.creative p:nth-of-type(1) span{
+    font-weight: bold;
+}
+
+section.about div.creative p:nth-of-type(1){
+    color:#444;
+    font-size: 18px;
+}
+
+section.about div.creative p:nth-of-type(2){
+    color:rgb(109, 101, 101);
+    line-height: 1.3;
+}
+
+section.about div.creative p:nth-of-type(3) a{
+    text-decoration: none;
+    color:rgb(109, 101, 101);
+    transition: all 1s ease-in-out;
+}
+
+section.about div.creative p:nth-of-type(3) a:hover{
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 5px;
+    
+}
+
+section.about div.awsome h3 ,
+section.about div.office h3{
+
+    padding: 15px 0 15px 0;
+    color: #666;
+}
+
+section.about div.awsome p ,
+section.about div.office p{
+    color:rgb(109, 101, 101);
+    font-size: 14px;
+}
+section.about div.awsome img ,
+section.about div.office img{
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+section.about div.awsome >div ,
+section.about div.office >div{
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+section.about div.awsome > div:hover img ,
+section.about div.office  > div:hover img
+{
+   transform: scale(1.2); 
+}
+
+section.about div.awsome  > div div.overlay ,
+section.about div.office  > div div.overlay{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+section.about div.awsome > div:hover div.overlay ,
+section.about div.office div:hover div.overlay
+{
+    display: block
+}
+
+/*------------------ Third Section--------------------*/
+section.folio{
+    width: 100%;
+    background: url(../images/slide-7-fw.jpg);
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    position: relative;
+    line-height: 1.8;
+}
+
+.folio_part{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+section.folio div.folio_part h4
+{
+    font-weight: normal
+}
+
+section.folio div.folio_part p
+{
+    font-weight: bold
+}
+section.folio div.folio_part p.twoe{
+    display: none;
+}
+
+section.folio div.folio_part span{
+    font-size: 13px;
+    font-style: italic;
+    
+}
+
+section.folio div.folio_part button{
+    width: 200px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-left: 5px;
+    background: none;
+    border: 2px solid white;
+    color:white;
+    font-size: 18px;
+    transition: all 1s ease-out;
+}
+section.folio div.folio_part button:hover{
+    
+    background: black;
+    border-radius: 10px;
+}
+
+/*----------------- forth section : solution-----------------------*/
+
+section.solution{
+    width: 100%;
+    height: 400px;
+    padding: 70px 0;
+}
+
+section.solution div.tailor,
+section.solution div.acordion{
+    width: 50%;
+    float: left;
+}
+
+section.solution div.acordion{
+    padding-top: 10px;
+}
+
+section.solution div.tailor h2{
+    font-size: 2em;
+    padding-bottom: 17px;
+}
+
+section.solution div.tailor p:nth-of-type(1){
+    color: #444;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+section.solution div.tailor p:nth-of-type(2){
+    color: #666;
+    font-size: 15px;
+    padding-bottom: 10px;
+    width: 80%;
+}
+
+section.solution div.tailor a{
+    text-decoration: none;
+    color: #666;
+    padding: 10px 0 0 0;
+    transition: all .5s ease-in-out;
+}
+
+section.solution div.tailor a:hover{
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 5px;
+    
+}
+
+section.solution div.acordion h3{
+    font-size: 20px;
+    padding: 5px 8px;
+    cursor: pointer;
+    background: rgb(119, 118, 118);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+section.solution div.acordion p{
+    font-size: 15px;
+    color: #666;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+/*-------------------- Study Section ----------------------------*/
+section.study
+{
+    width: 100%;
+    height: 400px;
+    background: #e62739;
+}
+section.study div.app{
+    width:50%;
+    float: left;
+    height: 400px;
+    color: white;
+    
+    
+}
+
+section.study div.app h2{
+    padding-top: 20%;
+}
+
+section.study div.app p{
+   padding-top: 5%;
+   line-height: 1.5;
+}
+
+section.study div.app p:nth-of-type(2){
+   
+    width: 86%;
+}
+
+section.study div.app a{
+    text-decoration: none;
+    color: white;
+}
+section.study div.download{
+    width: 50%;
+    height: 400px;
+    background: url(../images/hero-half-3.jpg);
+    float: right;
+}
+
+section.study div.download .number{
+    width: 50%;
+    color: white;
+    
+    margin: 15% auto;
+    height: 200px;
+    text-align: center;
+}
+
+section.study div.download div.number div.left
+{
+    width: 50%;
+    float: left
+}
+section.study div.download div.number div.right
+{
+    width: 50%;
+    float: right;
+}
+
+section.study div.download div.number div.left p ,
+section.study div.download div.number div.right p
+{
+    padding-bottom: 5%;
+    font-size: 2.5em
+}
+
+/*-------------------------------- Recent Section-----------------------------*/
+
+section.recent{
+  width: 100%;
+  height: 550px;
+  padding: 100px 0 70px 0 ;
+}
+section.recent div.center{
+    text-align: center;
+}
+section.recent div.center h2{
+    font-size: 2.5em;
+    padding-bottom: 30px;
+}
+
+section.recent div.center nav span{
+    color: gray;
+    font-size: 20px;
+    padding-left: 70px ;
+    text-decoration: none;
+}
+
+section.recent div.center nav{
+    margin-bottom: 50px;
+}
+section.recent div.All_Images .first,
+section.recent div.All_Images .second{
+    width: 50%;
+    float: left;
+}
+
+section.recent div.All_Images .first .bird,
+section.recent div.All_Images .first .man{
+    width: 50%;
+    float: left;
+    
+}
+
+section.recent div.All_Images .first .bird img,
+section.recent div.All_Images .first .man img{
+    width: 100%;
+}
+
+section.recent div.All_Images .second .open{
+    width: 100%;
+}
+section.recent div.All_Images .second .open img{
+    width: 100%;
+    height: 450px;
+}
+section.recent div.All_Images .second .close{
+    width: 100%;
+    
+}
+
+section.recent div.All_Images .second .close img:nth-of-type(1){
+    width: 50%;
+    float: left;
+}
+
+section.recent div.All_Images .second .close img:nth-of-type(2){
+    width: 50%;
+    float: left;
+}
+
+/* .mix{
+    display: none;
+} */
+
+/*-----------------Section : Clients-----------------------*/
+section.clients{
+    width: 100%;
+    height: 200px;
+    clear: both;
+    margin-top: -20px;
+    padding: 30px 0;
+    background: #9068be;
+    color:white;
+}
+
+section.clients div.client{
+    width: 20%;
+    float: left;
+}
+
+section.clients div.client p{
+    line-height: 3;
+}
+
+/*---------------------- Footer--------------------*/
+
+footer{
+    height: 300px;
+    width: 100%;
+    padding-top: 20px;
+    background: #222;
+    color: white;
+    position: relative
+    
+}
+
+footer div.conrad
+{
+    width:22%;
+    margin-left: 2%;
+    float: left;
+    
+}
+
+footer div.conrad a
+{
+    text-decoration: none;
+    display: block;
+    color: #888;
+    line-height: 2.5
+}
+
+footer div.conrad  p
+{
+    padding-bottom: 5%;
+    color: #888
+}
+
+footer div.conrad h3
+{
+    padding-bottom: 7%;
+}
+
+footer div.conrad  input
+{
+    display: block;
+    background: none;
+    outline: 0;
+    padding: 8px;
+    color: #fff;
+    margin-bottom: 2%;
+    
+    
+}
+
+footer div.conrad  input[type=email] , footer div.conrad  input[type=text]
+{
+    border: 0;
+    border-bottom: 1px solid #888;   
+}
+footer div.conrad  input[type=submit]
+{
+    border: 1px solid #888;
+    transition: all .5s ease-in-out;
+}
+
+footer div.conrad  input[type=submit]:hover
+{
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+footer .footer
+{
+    width: 100%;
+    height: 70px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    line-height: 70px;
+    
+}
+
+footer .footer div.left
+{
+    float: left;
+    
+}
+
+footer .footer div.left .fa,
+footer .footer div.left span
+{
+    padding-left: 20px;
+}
+
+footer .footer div.right
+{
+    float: right
+}
+
+footer .footer div.right a
+{
+    text-decoration: none;
+    color: #fff
+}
+
+
